@@ -1669,7 +1669,7 @@ body[data-page="contact"] .page-hero--contact { padding-top: calc(clamp(38px, 4.
 .brand__name span { font-size: 10.5px; }
 .primary-nav { justify-content: space-between; gap: clamp(26px, 3vw, 48px); font-size: 14.5px; font-weight: 700; }
 .nav-cta {
-  min-height: 32px;
+  min-height: 42px;
   min-width: 154px;
   justify-content: center;
   gap: 7px;
@@ -1759,7 +1759,7 @@ h2, .page-hero h1 { font-weight: 700; }
 .service-card__text p, .services-grid .service-card__text p,
 .page-hero__aside p, .section-heading__side p,
 .contact-detail p, .booking-page__intro > p:not(.eyebrow) { font-size: 15px; line-height: 1.75; }
-.button, .nav-cta, .hero__actions .button { min-height: 54px; font-size: 14px; font-weight: 700; }
+.button, .hero__actions .button { min-height: 54px; font-size: 14px; font-weight: 700; }
 .button--dark, .nav-cta { background-color: var(--plum-deep); }
 .button--dark:hover, .nav-cta:hover { background-color: var(--coral); }
 .hero__actions .button--whatsapp { border-color: #3d846e; color: #28715d; }
@@ -1771,7 +1771,6 @@ h2, .page-hero h1 { font-weight: 700; }
 .testimonial-card { border-color: rgba(81,43,77,.18); }
 .testimonial-card__quote { color: var(--coral); }
 .ritual-row:nth-child(even) { background: linear-gradient(90deg, #fffaf6, #f5eaf1 50%, #fffaf6); }
-.beauty-categories { background: linear-gradient(120deg, var(--plum-deep), #624363 60%, #8b5366); }
 @media (max-width: 760px) {
   body { font-size: 16px; }
   p, .service-card__text p, .page-hero__aside p { font-size: 15px; }
