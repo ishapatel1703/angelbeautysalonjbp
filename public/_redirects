@@ -1,0 +1,6 @@
+/book-appointment /contact/ 301
+/book-appointment/* /contact/ 301
+/services /services/ 301
+/gallery /gallery/ 301
+/contact /contact/ 301
+/* /index.html 200
