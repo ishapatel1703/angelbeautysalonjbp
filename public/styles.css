@@ -1659,7 +1659,7 @@ body[data-page="contact"] .page-hero--contact { padding-top: calc(clamp(38px, 4.
 
 /* Clearer, roomier navigation with a stronger booking action. */
 .site-header__inner.container {
-  width: min(calc(100% - clamp(56px, 8vw, 128px)), 1660px);
+  width: min(calc(100% - clamp(56px, 8vw, 128px)), 1320px);
   gap: 36px;
 }
 .brand { gap: 13px; }
