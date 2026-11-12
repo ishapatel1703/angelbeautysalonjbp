@@ -507,13 +507,15 @@ h2 { margin-bottom: 0; color: var(--plum); font-family: var(--serif); font-size:
 /* Five full-bleed beauty categories directly below the Home hero. */
 .beauty-categories { display: flex; width: 100%; min-height: clamp(470px, 43vw, 690px); overflow: hidden; background: var(--plum); }
 .beauty-category { position: relative; display: flex; flex: 1 1 20%; min-width: 0; align-items: center; justify-content: center; overflow: hidden; isolation: isolate; color: #fff; text-align: center; text-decoration: none; transition: flex .55s var(--ease); }
-.beauty-category::before, .beauty-category::after { position: absolute; z-index: -1; inset: 0; content: ''; }
+.beauty-category::before, .beauty-category::after { position: absolute; inset: 0; content: ''; }
+.beauty-category::before { z-index: 0; }
+.beauty-category::after { z-index: 1; }
 .beauty-category::before { background: var(--category-image) center / cover no-repeat; transform: scale(1.01); transition: transform .7s var(--ease); }
 .beauty-category::after { background: linear-gradient(180deg,rgba(21,14,20,.31),rgba(21,14,20,.63)); transition: background .35s ease; }
 .beauty-category:hover, .beauty-category:focus-visible { flex-grow: 1.35; }
 .beauty-category:hover::before, .beauty-category:focus-visible::before { transform: scale(1.07); }
 .beauty-category:hover::after, .beauty-category:focus-visible::after { background: linear-gradient(180deg,rgba(21,14,20,.2),rgba(21,14,20,.57)); }
-.beauty-category__content { display: grid; justify-items: center; gap: 12px; width: min(100% - 32px, 330px); padding: 26px 10px; text-shadow: 0 2px 14px rgba(0,0,0,.28); }
+.beauty-category__content { position: relative; z-index: 2; display: grid; justify-items: center; gap: 12px; width: min(100% - 32px, 330px); padding: 26px 10px; text-shadow: 0 2px 14px rgba(0,0,0,.28); }
 .beauty-category__eyebrow { color: #f1d7bc; font-size: 9.9px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .beauty-category__title { font-family: var(--sans); font-size: clamp(31.9px, 3.3vw, 51.7px); font-weight: 700; letter-spacing: -.04em; line-height: 1; }
 .beauty-category__description { max-width: 260px; font-size: clamp(13.2px, 1.21vw, 17.6px); line-height: 1.55; }
